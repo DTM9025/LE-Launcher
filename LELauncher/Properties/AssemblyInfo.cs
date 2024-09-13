@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("LEProc")]
+[assembly: AssemblyTitle("LELauncher")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Paddy Xu")]
-[assembly: AssemblyProduct("LEProc")]
-[assembly: AssemblyCopyright("Copyright © Paddy Xu 2014")]
+[assembly: AssemblyCompany("DTM9025")]
+[assembly: AssemblyProduct("LELauncher")]
+[assembly: AssemblyCopyright("Copyright © DTM9025 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
