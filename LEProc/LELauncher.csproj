@@ -7,8 +7,8 @@
     <ProjectGuid>{A2CF5369-4665-49F6-B948-B44296002C3D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LEProc</RootNamespace>
-    <AssemblyName>LEProc</AssemblyName>
+    <RootNamespace>LELauncher</RootNamespace>
+    <AssemblyName>LELauncher</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
