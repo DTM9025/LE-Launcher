@@ -18,8 +18,8 @@ Download available at <https://github.com/DTM9025/LE-Launcher/releases>.
 ## Configuration
 
 This launcher requires those four files to be located in the same directory. In addition, it requires `le.config` to
-be properly configured to run the desired executable with the appropriate locale settings. An example `le.config` is
-provided in this project and release. The fields that you should edit are in the `le.config` Profile and are as follows:
+be properly configured to run the desired executable with the appropriate locale settings. The fields that you should
+edit are in the `le.config` Profile and are as follows:
 
 * `Parameter`: The relative path from the directory of `LELauncher.exe` to the target executable you want to run.
 * `Location`: The locale you want to simulate. These are the same as the ones used in Locale Emulator. Common values include `ja-JP` and `zh-CN`. Available location codes can be found [here](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
@@ -29,7 +29,7 @@ provided in this project and release. The fields that you should edit are in the
 * `IsAdvancedRedirection`: Whether to fake system UI language. Can be set `true` or `false`.
 * `RunWithSuspend`: Whether to run the target executable with a suspended process. Can be set `true` or `false`. **Recommended to be false**.
 
-Example configs for common profiles can be found in the `LEConfigs` folder.
+Example configs for common profiles can be found in the [`LEConfigs`](https://github.com/DTM9025/LELauncher/tree/master/LEConfigs) folder.
 
 ## Requirements
 
@@ -84,8 +84,8 @@ needing to tell the user to install Locale Emulator or switch locales in Windows
  3. Open `LocaleEmulator.sln`.
  4. Perform Build action.
  5. Clone and build the core libraries: https://github.com/xupefei/Locale-Emulator-Core
- 6. Copy LoaderDll.dll and LocaleEmulator.dll from Locale-Emulator-Core to Locale-Emulator build folder.
- 7. Create a `le.config` file as appropriate and place into the build folder. (See `LEConfigs` folder for examples).
+ 6. Copy LoaderDll.dll and LocaleEmulator.dll from Locale-Emulator-Core to LELauncher build folder.
+ 7. Create a `le.config` file as appropriate and place into the build folder. (See [`LEConfigs`](https://github.com/DTM9025/LELauncher/tree/master/LEConfigs) folder for examples).
 
 ## License
 
