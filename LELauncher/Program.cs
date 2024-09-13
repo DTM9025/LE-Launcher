@@ -57,17 +57,26 @@ namespace LELauncher
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
 
-                    GlobalHelper.ShowErrorDebugMessageBox("SYSTEM_REPORT", 0);
+                    return;
+            }
+
+            var profile = LEConfig.GetProfiles(conf)[0];
+
+            string exePath = Path.Combine(dirName, profile.Parameter);
+            if (!File.Exists(exePath))
+            {
+                MessageBox.Show(
+                    "Cannot find target executable: " + profile.Parameter + "\r\n" +
+                    "Please ensure the Parameter value in le.config is a correct relative path to the target exe.\r\n",
+                    "Locale Emulator Config Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
 
                     return;
             }
-            else
-            {
-                var profile = LEConfig.GetProfiles(conf)[0];
 
-                string exePath = Path.Combine(dirName, profile.Parameter);
-                DoRunWithLEProfile(exePath, 2, profile);
-            }
+            DoRunWithLEProfile(exePath, 2, profile);
+
         }
 
         private static void DoRunWithLEProfile(string absPath, int argumentsStart, LEProfile profile)
