@@ -13,7 +13,7 @@ you can include those files and have the user just run it without needing to ins
 
 ## Download
 
-Download available at <https://github.com/DTM9025/LE-Launcher/releases>.
+Download available at <https://github.com/DTM9025/LELauncher/releases>.
 
 ## Configuration
 
