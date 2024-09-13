@@ -77,7 +77,7 @@ needing to tell the user to install Locale Emulator or switch locales in Windows
 ## Build
 
  1. Clone the repo using Git.
- 2. Install Microsoft Visual Studio 2022. Make sure you have `.NET desktop development` checked.
+ 2. Install Microsoft Visual Studio 2015 / 2017. Make sure you have `.NET desktop development` checked.
  3. Open `LELauncher.sln`.
  4. Perform Build action.
  5. Clone and build the core libraries: https://github.com/xupefei/Locale-Emulator-Core
