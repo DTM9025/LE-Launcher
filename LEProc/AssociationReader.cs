@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Win32;
 
-namespace LECommonLibrary
+namespace LEProc
 {
     public class AssociationReader
     {

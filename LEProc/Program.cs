@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
-using LECommonLibrary;
 
 
 namespace LEProc
@@ -184,11 +183,7 @@ namespace LEProc
             try
             {
                 SystemHelper.RunWithElevatedProcess(
-                    Path.Combine(
-                        Path.GetDirectoryName(
-                            Assembly.GetExecutingAssembly()
-                                .Location),
-                        "LEProc.exe"),
+                    Assembly.GetExecutingAssembly().Location,
                     Args);
             }
             catch (Exception)

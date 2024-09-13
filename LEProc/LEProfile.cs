@@ -1,4 +1,4 @@
-﻿namespace LECommonLibrary
+﻿namespace LEProc
 {
     public struct LEProfile
     {

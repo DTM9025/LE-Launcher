@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace LECommonLibrary
+namespace LEProc
 {
     public static class GlobalHelper
     {
