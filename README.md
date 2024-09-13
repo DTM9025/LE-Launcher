@@ -33,13 +33,10 @@ Example configs for common profiles can be found in the [`LEConfigs`](https://gi
 
 ## Requirements
 
-This program requires the `.NET Framework 4.8 Runtime` to be installed. This should be included by default in updated Windows 10/11.
-If this is not the case, then you can download the runtime (or tell users to download the runtime) from [here](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48).
+This program requires the `.NET Framework 4.0 Runtime` or higher to be installed. This should be included by default in Windows 11/10/8 and
+should be installed in most Windows 7 instances. If this is not the case, then you can download the runtime (or tell users to download the runtime) from [here](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48).
 
 Due to this, this program only works for Windows 7 and up. In addition, the release binaries only work for 32bit executables.
-
-However, the code here should still compile in earlier versions up to `.NET Framework 4.0`. That version is end-of-life,
-but if needed you can simply edit the project to use `.NET Framework 4.0` as in the original Locale Emulator program.
 
 ## Example Usage
 
