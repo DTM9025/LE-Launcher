@@ -38,6 +38,9 @@ If this is not the case, then you can download the runtime (or tell users to dow
 
 Due to this, this program only works for Windows 7 and up. In addition, the release binaries only work for 32bit executables.
 
+However, the code here should still compile in earlier versions up to `.NET Framework 4.0`. That version is end-of-life,
+but if needed you can simply edit the project to use `.NET Framework 4.0` as in the original Locale Emulator program.
+
 ## Example Usage
 
 Let's say you have a 32-bit game that you are translating. However, for some weird reason it doesn't work unless you are in

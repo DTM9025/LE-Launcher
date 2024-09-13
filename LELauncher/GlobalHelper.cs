@@ -11,52 +11,7 @@ namespace LELauncher
 {
     public static class GlobalHelper
     {
-        public static string GlobalVersionPath =
-            Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
-                         "LEVersion.xml");
-
-        public static string GetLEVersion()
-        {
-            try
-            {
-                var doc = XDocument.Load(GlobalVersionPath);
-
-                return doc.Descendants("LEVersion").First().Attribute("Version").Value;
-            }
-            catch
-            {
-                return "0.0.0.0";
-            }
-        }
-
-        public static int GetLastUpdate()
-        {
-            try
-            {
-                var doc = XDocument.Load(GlobalVersionPath);
-
-                return int.Parse(doc.Descendants("LEVersion").First().Attribute("LastUpdate").Value);
-            }
-            catch
-            {
-                return 0;
-            }
-        }
-
-        public static void SetLastUpdate(int date)
-        {
-            try
-            {
-                var doc = XDocument.Load(GlobalVersionPath);
-
-                doc.Descendants("LEVersion").First().Attribute("LastUpdate").Value = date.ToString().PadLeft(8, '0');
-
-                doc.Save(GlobalVersionPath);
-            }
-            catch
-            {
-            }
-        }
+        public static string Version = "0.0.1";
 
         public static void ShowErrorDebugMessageBox(string commandLine, uint errorCode)
         {
@@ -66,12 +21,11 @@ namespace LELauncher
                             + $"{string.Format($"{Environment.OSVersion} {(SystemHelper.Is64BitOS() ? "x64" : "x86")}", Environment.OSVersion, SystemHelper.Is64BitOS() ? "x64" : "x86")}\r\n"
                             + $"{GenerateSystemDllVersionList()}\r\n"
                             + "If you have any antivirus software running, please turn it off and try again.\r\n"
-                            + "If this window still shows, try go to Safe Mode and drag the application "
-                            + "executable onto LEProc.exe.\r\n"
+                            + "If this window still shows, try go to Safe Mode and run this program again.\r\n"
                             + "If you have tried all above but none of them works, feel free to submit an issue at\r\n"
-                            + "https://github.com/xupefei/Locale-Emulator/issues.\r\n" + "\r\n" + "\r\n"
+                            + "https://github.com/DTM9025/LE-Launcher/issues.\r\n" + "\r\n" + "\r\n"
                             + "You can press CTRL+C to copy this message to your clipboard.\r\n",
-                            "Locale Emulator Version " + GetLEVersion());
+                            "Locale Emulator Launcher Version " + Version);
         }
 
         private static string GenerateSystemDllVersionList()
