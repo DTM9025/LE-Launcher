@@ -10,7 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using Amemiya.Extensions;
 
-namespace LEProc
+namespace LELauncher
 {
     internal class LERegistryRedirector
     {

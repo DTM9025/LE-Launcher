@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Xml.Linq;
 
-namespace LEProc
+namespace LELauncher
 {
     public static class LEConfig
     {

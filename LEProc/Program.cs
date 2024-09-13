@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Windows.Forms;
 
 
-namespace LEProc
+namespace LELauncher
 {
     internal static class Program
     {

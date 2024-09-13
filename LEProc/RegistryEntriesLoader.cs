@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Globalization;
 
-namespace LEProc
+namespace LELauncher
 {
     public static class RegistryEntriesLoader
     {

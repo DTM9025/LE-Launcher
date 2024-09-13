@@ -1,4 +1,4 @@
-﻿namespace LEProc
+﻿namespace LELauncher
 {
     public struct LEProfile
     {

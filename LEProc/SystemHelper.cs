@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 
-namespace LEProc
+namespace LELauncher
 {
     public static class SystemHelper
     {

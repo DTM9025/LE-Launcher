@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LEProc.Properties {
+namespace LELauncher.Properties {
     using System;
     
     

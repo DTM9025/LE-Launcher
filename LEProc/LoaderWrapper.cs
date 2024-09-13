@@ -6,7 +6,7 @@ using System.Text;
 using Amemiya.Extensions;
 using Microsoft.Win32;
 
-namespace LEProc
+namespace LELauncher
 {
     internal class LoaderWrapper
     {

@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace LEProc
+namespace LELauncher
 {
     public class RegistryEntry
     {
