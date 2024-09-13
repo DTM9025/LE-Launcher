@@ -74,12 +74,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Amemiya.Extensions.ArrayExtensions.cs" />
+    <Compile Include="AssociationReader.cs" />
+    <Compile Include="GlobalHelper.cs" />
+    <Compile Include="LEConfig.cs" />
+    <Compile Include="LEProfile.cs" />
+    <Compile Include="PEFileReader.cs" />
     <Compile Include="RegistryEntriesLoader.cs" />
     <Compile Include="RegistryEntry.cs" />
     <Compile Include="LoaderWrapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LERegistryRedirector.cs" />
+    <Compile Include="SystemHelper.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
