@@ -70,7 +70,7 @@ If you want, you can also rename `LELauncher.exe` to whatever is best for you (l
 more clear to users that they should run that executable to run the translated game. In addition, you could also change
 the icon with external tools like Resource Hacker (instructions can be found [here](https://stackoverflow.com/questions/64545983/how-do-i-add-an-icon-to-an-iconless-exe-file)).
 
-Now you can just zip that up with the included launcher in your patch distrubation, and tell users to run `LELauncher.exe`
+Now you can just zip the folder up with those four files as your patch distribution, and tell users to run `LELauncher.exe`
 (or whatever you renamed it to) to run the translated patched game and it will run in the Japanese locale! All without
 needing to tell the user to install Locale Emulator or switch locales in Windows!
 
