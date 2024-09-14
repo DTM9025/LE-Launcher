@@ -75,11 +75,11 @@ namespace LELauncher
                     return;
             }
 
-            DoRunWithLEProfile(exePath, 2, profile);
+            DoRunWithLEProfile(exePath, profile);
 
         }
 
-        private static void DoRunWithLEProfile(string absPath, int argumentsStart, LEProfile profile)
+        private static void DoRunWithLEProfile(string absPath, LEProfile profile)
         {
             try
             {
