@@ -6,8 +6,8 @@ Launcher for Locale Emulator that is distributable and can be included in game p
 By simply including `LELauncher.exe`, the configuration `le.config`, and the dlls `LoaderDll.dll` and `LocaleEmulator.dll`,
 you can run any executable with the appropriate locale settings just like as you would with Locale Emulator. However,
 this format makes it so you can package it with your game distributions or patches without needing to tell users to
-install Locale Emulator (or manually switch locales). By simply editing `le.config` with the appropriate settings,
-you can include those files and have the user just run it without needing to install Locale Emulator!
+install Locale Emulator (or manually switch locales). By simply editing `le.config` with a text editor with the appropriate
+values, you can include those files and have the user just run it without needing to install Locale Emulator!
 
 **NOTE:** The release binaries currently only work for 32-bit applications.
 
@@ -18,8 +18,8 @@ Download available at <https://github.com/DTM9025/LELauncher/releases>.
 ## Configuration
 
 This launcher requires those four files to be located in the same directory. In addition, it requires `le.config` to
-be properly configured to run the desired executable with the appropriate locale settings. The fields that you should
-edit are in the `le.config` Profile and are as follows:
+be properly configured to run the desired executable with the appropriate locale settings. You can edit `le.config` with
+any text editor. The fields that you can edit are in the `le.config` Profile and are as follows:
 
 * `Parameter`: The relative path from the directory of `LELauncher.exe` to the target executable you want to run.
 * `Location`: The locale you want to simulate. These are the same as the ones used in Locale Emulator. Common values include `ja-JP` and `zh-CN`. Available location codes can be found [here](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
@@ -61,10 +61,10 @@ For starters, let's say the directory structure of the patched game zip will be 
 Before you zip this up, you add `LELauncher.exe`, `le.config`, `LoaderDll.dll`, and `LocaleEmulator.dll` into the root folder
 alongside `game.exe`.
 
-To ensure it runs in the Japanese locale, you edit `le.config` and make the `Location` value to be `ja-JP` and make the
-`Timezone` value to be `Tokyo Standard Time`. To ensure `LELauncher.exe` launches the game you also make the `Parameter` value
-to be `game.exe`, as that is the relative path to that executable from `LELauncher.exe`'s directory. You set the other parameters
-as appropriate.
+To ensure it runs in the Japanese locale, you edit `le.config` with a text editor and make the `Location` value to be `ja-JP` and
+make the `Timezone` value to be `Tokyo Standard Time`. To ensure `LELauncher.exe` launches the game you also make the `Parameter`
+value to be `game.exe`, as that is the relative path to that executable from `LELauncher.exe`'s directory. You set the other
+parameters as appropriate.
 
 If you want, you can also rename `LELauncher.exe` to whatever is best for you (like `game-en.exe` or something) to make it
 more clear to users that they should run that executable to run the translated game. In addition, you could also change
