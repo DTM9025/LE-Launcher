@@ -109,7 +109,7 @@ namespace LELauncher
                 var applicationName = string.Empty;
                 var commandLine = string.Empty;
 
-                if (Path.GetExtension(absPath).ToLower() == ".exe")
+                if (Path.GetExtension(absPath).ToLower() == ".exe" || Path.GetExtension(absPath).ToLower() == ".com")
                 {
                     applicationName = absPath;
 
@@ -119,6 +119,19 @@ namespace LELauncher
                 }
                 else
                 {
+                    if (DialogResult.No ==
+                        MessageBox.Show(
+                            "Waring: The given target (" + profile.Parameter + ") does not have a .exe extension.\r\n" +
+                            "\r\n" +
+                            "This probably means that the Parameter value in le.config is incorrect and " +
+                            "not given a correct relative path to the target executable. " +
+                            "If this is indeed correct, you can continue, but this program is not guaranteed to work.\r\n",
+                            "Locale Emulator Executable Warning",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Information
+                            ))
+                        return;
+
                     var jb = AssociationReader.GetAssociatedProgram(Path.GetExtension(absPath));
 
                     if (jb == null)
@@ -129,7 +142,7 @@ namespace LELauncher
                     commandLine = jb[0].StartsWith("\"")
                         ? $"{jb[0]} "
                         : $"\"{jb[0]}\" ";
-                    commandLine += jb[1].Replace("%1", absPath).Replace("%*", profile.Parameter);
+                    commandLine += jb[1].Replace("%1", absPath).Replace("%L", absPath).Replace("%*", "");
                 }
 
                 var currentDirectory = Path.GetDirectoryName(absPath);
