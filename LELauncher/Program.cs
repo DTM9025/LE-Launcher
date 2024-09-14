@@ -119,19 +119,6 @@ namespace LELauncher
                 }
                 else
                 {
-                    if (DialogResult.No ==
-                        MessageBox.Show(
-                            "Waring: The given target (" + profile.Parameter + ") does not have a .exe extension.\r\n" +
-                            "\r\n" +
-                            "This probably means that the Parameter value in le.config is incorrect and " +
-                            "not given a correct relative path to the target executable. " +
-                            "If this is indeed correct, you can continue, but this program is not guaranteed to work.\r\n",
-                            "Locale Emulator Executable Warning",
-                            MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Information
-                            ))
-                        return;
-
                     var jb = AssociationReader.GetAssociatedProgram(Path.GetExtension(absPath));
 
                     if (jb == null)
