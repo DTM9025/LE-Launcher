@@ -11,7 +11,7 @@ namespace LELauncher
 {
     public static class GlobalHelper
     {
-        public static string Version = "0.0.1";
+        public static string Version = "0.0.3";
 
         public static void ShowErrorDebugMessageBox(string commandLine, uint errorCode)
         {
